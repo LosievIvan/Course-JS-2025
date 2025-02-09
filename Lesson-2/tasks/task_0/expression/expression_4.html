@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../expression/style.css">
+</head>
+<body>
+	<script>
+		// Обчислити значення виразу S4 = cosa*cosb+sina*sinb
+		// Вводимо необхідні дані
+		let a = parseInt(prompt('Введіть значення а:', '0'))
+		let b = parseInt(prompt('Введіть значення b:', '0'))
+		
+		// Проводимо обчислення виразу
+		let s4 = Math.cos(a) * Math.cos(b) + Math.sin(a) * Math.sin(b)
+
+		// Виводимо результат обчислення користовачу 
+		document.write(`S4 = ${s4.toFixed (4)}`)
+	</script>
+</body>
+</html>

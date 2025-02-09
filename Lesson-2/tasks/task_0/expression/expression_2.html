@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../expression/style.css">
+</head>
+<body>
+	<script>
+		// Обчислити значення виразу S2=√p〈p-a〉〈p-b〉〈p-c〉
+		// Вводимо необхідні дані
+		let a = parseInt(prompt('Введіть значення а:', '0'))
+		let b = parseInt(prompt('Введіть значення b:', '0'))
+		let c = parseInt(prompt('Введіть значення c:', '0'))
+		
+		// обчислюємо напівпериметр P
+		let p = 1/2*(a+b+c)
+
+		// Проводимо обчислення даних
+		let s2 = Math.sqrt(p*(p-a)*(p-b)*(p-c))
+
+		// Виводимо результат обчислення користовачу 
+		document.write(`S2 = ${s2.toFixed (3)}`);
+	</script>
+</body>
+</html>
