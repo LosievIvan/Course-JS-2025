@@ -10,7 +10,7 @@ if (confirm("Почати тестування?")) {
 
   const getSelectedItemNumber = (randomArr) => {
     let sum = 0;
-    let userAnswer = 1;
+    let userAnswer = true;
     while (userAnswer === true) {
       let userNumber = parseInt(
         prompt(
@@ -25,6 +25,8 @@ if (confirm("Почати тестування?")) {
   };
   let numberOfPrizes = parseInt(prompt(`Введіть кількість призових сум`, `12`));
   document.write(
-    `Ваш виграш склав = ${getSelectedItemNumber(getrandomArrWins())}`
+    `Ваш виграш склав = ${getSelectedItemNumber(
+      getrandomArrWins(numberOfPrizes)
+    )}`
   );
 }
